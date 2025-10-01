@@ -4,6 +4,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.*;
 
+@Repository
 public class TaskRepository {
     private final Map<Long, Task> tasks = new HashMap<>();
     private Long nextId = 1L;
