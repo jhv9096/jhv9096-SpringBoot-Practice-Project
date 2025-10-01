@@ -4,13 +4,13 @@ public class Task {
     private Long id;
     private String title;
     private String description;
-    private String status; // e.g., "OPEN", "IN_PROGRESS", "DONE"
+    private TaskStatus status; // e.g., "OPEN", "IN_PROGRESS", "DONE"
     private String dueDate; //ISO string
 
     // Constructors
     public Task() {}
 
-    public Task(Long id, String title, String description, String status, String dueDate) {
+    public Task(Long id, String title, String description, TaskStatus status, String dueDate) {
         this.id = id;
         this.title = title;
         this.description = description;
@@ -28,8 +28,8 @@ public class Task {
     public String getDescription() { return description; }
     public void setDescription(String description) { this.description = description; }
 
-    public String getStatus() { return status; }
-    public void setStatus(String status) { this.status = status; }
+    public TaskStatus getStatus() { return status; }
+    public void setStatus(TaskStatus status) { this.status = status; }
 
     public String getDueDate() { return dueDate; }
     public void setDueDate(String dueDate) { this.dueDate = dueDate; }
