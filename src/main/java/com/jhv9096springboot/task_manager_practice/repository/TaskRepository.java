@@ -1,5 +1,6 @@
-package com.jhv9096springboot.task_manager_practice;
+package com.jhv9096springboot.task_manager_practice.repository;
 
+import com.jhv9096springboot.task_manager_practice.model.Task;
 import org.springframework.stereotype.Repository;
 
 import java.util.*;

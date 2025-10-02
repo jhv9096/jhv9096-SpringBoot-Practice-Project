@@ -1,11 +1,14 @@
-package com.jhv9096springboot.task_manager_practice;
+package com.jhv9096springboot.task_manager_practice.controller;
 
+import com.jhv9096springboot.task_manager_practice.model.Task;
+import com.jhv9096springboot.task_manager_practice.repository.TaskRepository;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
 @RequestMapping("/tasks")
+@SuppressWarnings("unused") //All methods here are called via annotation
 public class TaskController {
     private final TaskRepository repository;
 

@@ -1,4 +1,4 @@
-package com.jhv9096springboot.task_manager_practice;
+package com.jhv9096springboot.task_manager_practice.enums;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 

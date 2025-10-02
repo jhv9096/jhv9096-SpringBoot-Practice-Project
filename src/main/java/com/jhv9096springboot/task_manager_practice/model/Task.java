@@ -1,4 +1,6 @@
-package com.jhv9096springboot.task_manager_practice;
+package com.jhv9096springboot.task_manager_practice.model;
+
+import com.jhv9096springboot.task_manager_practice.enums.TaskStatus;
 
 public class Task {
     private Long id;

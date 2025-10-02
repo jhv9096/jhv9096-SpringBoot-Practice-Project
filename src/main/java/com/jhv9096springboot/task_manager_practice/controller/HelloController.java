@@ -1,4 +1,4 @@
-package com.jhv9096springboot.task_manager_practice;
+package com.jhv9096springboot.task_manager_practice.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
