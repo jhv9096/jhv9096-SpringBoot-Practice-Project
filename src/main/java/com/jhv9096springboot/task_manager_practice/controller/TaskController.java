@@ -25,6 +25,7 @@ public class TaskController {
     public Task getTaskById(@PathVariable Long id) {
         return repository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Task not found"));
+        //replaces need for if-else block. If id is found, return that. Else, throw exception.
     }
 
     @PostMapping

@@ -16,6 +16,7 @@ public class TaskRepository {
 
     public Optional<Task> findById(Long id) {
         return Optional.ofNullable(tasks.get(id));
+        //Either returns the task with the requested id, or returns null if it cannot find a task with matching id.
     }
 
     public Task save(Task task) {
