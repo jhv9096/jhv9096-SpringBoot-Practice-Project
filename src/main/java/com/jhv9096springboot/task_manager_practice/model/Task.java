@@ -1,13 +1,22 @@
 package com.jhv9096springboot.task_manager_practice.model;
 
 import com.jhv9096springboot.task_manager_practice.enums.TaskStatus;
+import jakarta.validation.constraints.*;
 
 public class Task {
     private Long id;
+    @NotBlank(message="Title is required")
+    @Size(max = 100, message = "Title must be under 100 characters")
     private String title;
+
+    @Size(max = 500, message = "Description must be under 500 characters")
     private String description;
+
+    @NotNull(message = "Status is required")
     private TaskStatus status; // e.g., "OPEN", "IN_PROGRESS", "DONE"
-    private String dueDate; //ISO string
+
+    @Pattern(regexp = "\\d{4}-\\d{2}-\\d{2}", message = "Due date must be in YYYY-MM-DD format")
+    private String dueDate; //ISO string, regex in bean forces YYYY-MM-DD format
 
     // Constructors
     public Task() {}
