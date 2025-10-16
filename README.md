@@ -27,6 +27,7 @@ To run this project locally:
 ### Complete:
 - Create, read, update, and delete tasks
 - Swagger UI Integration
+- H2 Database
 
 ### Planned:
 - Filter tasks by status
