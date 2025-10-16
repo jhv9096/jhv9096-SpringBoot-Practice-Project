@@ -25,21 +25,21 @@ To run this project locally:
 ## Features
 
 ### Complete:
+- Create, read, update, and delete tasks
+- Swagger UI Integration
 
 ### Planned:
-- Create, read, update, and delete tasks
 - Filter tasks by status
 - Sort tasks by due date or title
 - In-memory persistence with H2
 - RESTful API design
-- Swagger UI for documentation
 
 ## Tech Stack
 
 - Java 21
 - Spring Boot
 - Maven
-- H2 Database
+- H2 Database (planned)
 - IntelliJ IDEA Community Edition
 
 ## What I Learned
