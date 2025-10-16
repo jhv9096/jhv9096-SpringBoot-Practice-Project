@@ -31,18 +31,22 @@ To run this project locally:
 ### Planned:
 - Filter tasks by status
 - Sort tasks by due date or title
-- In-memory persistence with H2
+- In-memory persistence with H2 (in-progress)
 - RESTful API design
+- Update TaskController deleteTask to use delete instead of deleteById
+- Add more secure logging to deleteTask
 
 ## Tech Stack
 
 - Java 21
 - Spring Boot
 - Maven
-- H2 Database (planned)
+- H2 Database
 - IntelliJ IDEA Community Edition
 
 ## What I Learned
-
+- How to setup a SpringBoot Project
+- How to use Spring Annotations
+- How to map API commands using Spring
 ## License
 This project is licensed under the [MIT license](LICENSE).

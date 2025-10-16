@@ -1,11 +1,18 @@
 package com.jhv9096springboot.task_manager_practice.model;
 
 import com.jhv9096springboot.task_manager_practice.enums.TaskStatus;
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
 import jakarta.validation.constraints.*;
 
 import java.time.LocalDate;
 
+@Entity
 public class Task {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @NotBlank(message="Title is required")
     @Size(max = 100, message = "Title must be under 100 characters")

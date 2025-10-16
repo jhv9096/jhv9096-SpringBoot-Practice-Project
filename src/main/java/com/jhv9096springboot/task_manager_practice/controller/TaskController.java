@@ -36,12 +36,22 @@ public class TaskController {
 
     @PutMapping("/{id}")
     public Task updateTask(@PathVariable Long id, @Valid @RequestBody Task task) {
-        return repository.update(id, task);
+        //return repository.update(id, task);
+        return repository.findById(id)
+                .map(existingTask -> {
+                    existingTask.setTitle(task.getTitle());
+                    existingTask.setDescription(task.getDescription());
+                    existingTask.setStatus(task.getStatus());
+                    existingTask.setDueDate(task.getDueDate());
+                    return repository.save(existingTask);
+                })
+                .orElseThrow(() -> new RuntimeException("Task not found"));
     }
 
     @DeleteMapping("/{id}")
     public void deleteTask(@PathVariable Long id) {
-        repository.delete(id);
+        //repository.delete(id);
+        repository.deleteById(id);
     }
 
 }
