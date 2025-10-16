@@ -28,14 +28,17 @@ To run this project locally:
 - Create, read, update, and delete tasks
 - Swagger UI Integration
 - H2 Database
+- Database file persistence
 
 ### Planned:
-- Filter tasks by status
-- Sort tasks by due date or title
-- In-memory persistence with H2 (in-progress)
 - RESTful API design
-- Update TaskController deleteTask to use delete instead of deleteById
-- Add more secure logging to deleteTask
+- Update ```TaskController``` ```deleteTask``` to use ```delete``` instead of ```deleteById```
+- Add more secure logging to ```deleteTask```
+- Add Authentication to endpoints using Spring-Security and role-based access
+- Add pagination and filtering using ```Pageable``` and ```Sort```, allowing querying tasks by status, due date, etc.
+- Write Unit and Integration tests with JUnit and Mockito. Include validation, error handling, and edge cases.
+- Enhance setup instructions in README
+- Add Swagger URL and H2 console info to README
 
 ## Tech Stack
 
