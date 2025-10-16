@@ -52,5 +52,9 @@ To run this project locally:
 - How to setup a SpringBoot Project
 - How to use Spring Annotations
 - How to map API commands using Spring
+- How to test APIs using Swagger
+- How to setup an H2 Database using in-memory storage
+- How to setup an H2 Database using file storage for persistence
+
 ## License
 This project is licensed under the [MIT license](LICENSE).
